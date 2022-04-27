@@ -1,0 +1,21 @@
+{
+    "snippets.ultisnips.directories": [
+        "$HOME/.config/nvim/UltiSnips"
+    ],
+    "html.filetypes": [
+        "html",
+        "template"
+    ],
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.willSaveHandlerTimeout": 1000,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "go",
+        "html",
+        "css",
+        "python",
+        "json",
+        "template",
+        "lua"
+    ]
+}
