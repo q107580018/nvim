@@ -19,3 +19,4 @@ vim.opt.laststatus=2
 vim.opt.hls=true
 vim.opt.background="dark"
 vim.cmd("colorscheme gruvbox")
+vim.cmd("highlight Normal guibg=NONE ctermbg=None")

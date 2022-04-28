@@ -1,3 +1,3 @@
 require("keybindings")
 require("settings")
-require("plugins")
+require("init-packer")
