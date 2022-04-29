@@ -1,0 +1,6 @@
+require("init-packer")
+require("config")
+require("init-lsp")
+require("keybindings")
+require("settings")
+require("colorscheme")
