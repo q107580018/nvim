@@ -33,8 +33,7 @@ map("", "<leader>j", "<C-w>j")
 map("", "<leader>k", "<C-w>k")
 map("", "<leader>l", "<C-w>l")
 map("n", "<leader>t", ":set splitright<cr>:vsplit<cr>:term<cr>i")
--- mapcmd("S","w<cr>:lua vim.lsp.buf.formatting()")
-map("n", "S", ":w<cr>:lua vim.lsp.buf.formatting()<cr>", { silent = true })
+mapcmdsilent("S", "w<cr>:lua vim.lsp.buf.formatting()")
 mapcmd("<up>", "res +5")
 mapcmd("<down>", "res -5")
 mapcmd("<left>", "vertical resize-5")
@@ -45,7 +44,7 @@ mapcmd("<leader>wq", "wq")
 mapcmd("<leader>qq", "q!")
 mapcmd("zr", ':lua CompileRun()<cr>')
 
--- 插件map
+-- 插件map -----------------------------------------------------------
 -- nvimtree
 mapcmd("<F3>", "NvimTreeToggle")
 
@@ -61,6 +60,8 @@ mapcmd("<leader>rn", "lua vim.lsp.buf.rename()")
 mapcmd("<leader>ca", "lua vim.lsp.buf.code_action()")
 mapcmd("gd", "lua vim.lsp.buf.definition()")
 mapcmd("gD", "lua vim.lsp.buf.declaration()")
+mapcmdsilent("[g", "lua vim.diagnostic.goto_prev()")
+mapcmdsilent(']g', "lua vim.diagnostic.goto_next()")
 
 -- bufferline
 mapcmdsilent("<C-h>", "BufferLineCyclePrev")
